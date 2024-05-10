@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I love my MOM</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fafafa;
+        overflow: hidden;
+    }
+
+    .left {
+        margin-left: 150px;
+        width: 60px;
+        height: 100px;
+        border-left: 60px solid red;
+        border-radius: 50%;
+        background: transparent;
+        margin-top: 100px;
+        transform: rotateZ(45deg);
+        box-shadow: 0px 0px 20px grey;
+    }
+
+    .Right {
+        margin-left: 210px;
+        width: 60px;
+        height: 100px;
+        border-left: 60px solid red;
+        border-radius: 50%;
+        background: transparent;
+        margin-top: -95px;
+        transform: rotateZ(-225deg);
+        box-shadow: 0px 0px 20px grey;
+    }
+
+    .Box {
+        width: 95px;
+        height: 95px;
+        background: red;
+        margin-left: 195px;
+        transform: rotateZ(-45deg);
+        margin-top: -69px;
+        box-shadow: 0px 0px 0px grey;
+    }
+
+    .heart-right {
+        position: absolute;
+        top: 200px;
+        right: 550px; /* Ajusta la posición del corazón en la derecha */
+        width: 60px;
+        height: 100px;
+        background: rgb(255, 255, 255);
+        transform: rotateZ(0deg);
+        box-shadow: 0px 0px 20px rgb(253, 250, 250);
+        z-index: 1;
+    }
+
+    .heart-right::before,
+    .heart-right::after {
+        content: '';
+        position: absolute;
+        width: 530px;
+        height: 350px;
+        background: red;
+        border-radius: 100%;
+        box-shadow: 0px 0px 20px grey;
+        z-index: 0;
+    }
+
+    .heart-right::before {
+        top: 0;
+        left: 130px;
+        transform: rotateZ(-45deg);
+    }
+
+    .heart-right::after {
+        top: 0;
+        left: -30px;
+        transform: rotateZ(45deg);
+    }
+
+    .heart-right img {
+        width: 300px; /* Ajusta el tamaño de la imagen en el centro del corazón */
+        height: 370px; /* Ajusta el tamaño de la imagen en el centro del corazón */
+        position: absolute;
+        top: 13px; /* Ajusta la posición vertical de la imagen */
+        left: 160px; /* Ajusta la posición horizontal de la imagen */
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .main {
+        margin-left: 200px;
+        animation: Blow 2s infinite;
+        margin-top: 600px;
+    }
+
+    @keyframes Blow {
+        0% {}
+        50% {
+            transform: rotateZ(-120deg);
+        }
+        100% {}
+    }
+
+    .L {
+        font-size: 180px;
+        margin-top: -160px;
+        margin-left: 140px;
+        animation: shad 2s infinite;
+    }
+
+    @keyframes shad {
+        0% {}
+        50% {
+            text-shadow: 20px 10px 10px grey;
+        }
+        100% {}
+    }
+
+    .V {
+        font-size: 180px;
+        margin-top: -380px;
+        margin-left: 580px;
+        animation: shad 2s infinite;
+    }
+
+    .E {
+        font-size: 180px;
+        margin-top: -390px;
+        margin-left: 750px;
+        animation: shad 2s infinite;
+    }
+
+    .I {
+        font-size: 180px;
+        margin-left: 480px;
+        animation: shad 2s infinite;
+        margin-top: -600px;
+    }
+
+    .My {
+        font-size: 180px;
+        margin-left: 220px;
+        animation: shad 2s infinite;
+        margin-top: 250px;
+    }
+
+    .MOM {
+        font-size: 180px;
+        margin-left: 520px;
+        animation: shad 2s infinite;
+        margin-top: -380px;
+    }
+
+    .container {
+        margin-top: -400px;
+    }
+</style>
+
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="left"></div>
+        <div class="Right"></div>
+        <div class="Box"></div>
+    </div>
+    <p class="L">L</p>
+    <p class="V">V</p>
+    <p class="E">E</p>
+    <p class="I">I</p>
+    <p class="My">My</p>
+    <p class="MOM">MOM</p>
+</div>
+<!-- Corazón en la derecha -->
+<div class="heart-right">
+    <img src="mamá.jpeg" alt="Imagen en el corazón">
+</div>
+</body>
+</html>
